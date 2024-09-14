@@ -1,0 +1,15 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`CoverArt renders correctly 1`] = `
+<div>
+  <div
+    class="cover-art mb-6"
+  >
+    <img
+      alt="Placeholder for Loading"
+      class="image-skeleton animate-pulse rounded-md"
+      src="/src/assets/placeholder.svg"
+    />
+  </div>
+</div>
+`;

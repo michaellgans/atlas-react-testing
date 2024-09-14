@@ -13,7 +13,7 @@ export function CoverArt() {
   const songContext = useContext(AppContext);
 
   if (!songContext) {
-    throw new Error();
+    throw new Error("CoverArt must be used within a Context Provider");
   }
 
   const { currentSong, songs } = songContext;
