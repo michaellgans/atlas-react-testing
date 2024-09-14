@@ -1,0 +1,29 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`renders PlayListItem component and matches the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="{currentplay-list-item mb-1 flex h-10 cursor-pointer items-center justify-between rounded-md text-sm font-medium bg-hover dark:bg-dark-hover active:bg-active dark:hover:bg-dark-hover dark:active:bg-dark-active"
+  >
+    <div
+      class="song-info"
+    >
+      <div
+        class="song-title pb-0.5"
+      >
+        Song A
+      </div>
+      <div
+        class="genre text-muted-text dark:text-dark-muted-text"
+      >
+        Artist A
+      </div>
+    </div>
+    <div
+      class="play-time text-muted-text dark:text-dark-muted-text"
+    >
+      3:45
+    </div>
+  </div>
+</DocumentFragment>
+`;
