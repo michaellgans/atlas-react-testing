@@ -27,3 +27,31 @@ exports[`renders PlayListItem component and matches the snapshot 1`] = `
   </div>
 </DocumentFragment>
 `;
+
+exports[`should render the PlayListItem component and match the snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="{currentplay-list-item mb-1 flex h-10 cursor-pointer items-center justify-between rounded-md text-sm font-medium bg-hover dark:bg-dark-hover active:bg-active dark:hover:bg-dark-hover dark:active:bg-dark-active"
+  >
+    <div
+      class="song-info"
+    >
+      <div
+        class="song-title pb-0.5"
+      >
+        Test Song 1
+      </div>
+      <div
+        class="genre text-muted-text dark:text-dark-muted-text"
+      >
+        Test Artist 1
+      </div>
+    </div>
+    <div
+      class="play-time text-muted-text dark:text-dark-muted-text"
+    >
+      3:00
+    </div>
+  </div>
+</DocumentFragment>
+`;
