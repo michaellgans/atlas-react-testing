@@ -12,9 +12,9 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '22.8.0'
+          node-version: '22.x'
       - name: Install dependencies
-        run: npm install
+        run: npm ci
       - name: Run Unit Tests
         run: npm run test
       - name: Run Test Coverage
