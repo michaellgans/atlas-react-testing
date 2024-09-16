@@ -4,7 +4,6 @@
 import { render } from "@testing-library/react";
 import MusicPlayer from "@/MusicPlayer";
 import { expect, test } from "vitest";
-import '@testing-library/jest-dom';
 
 test("MusicPlayer renders a child correctly", () => {
     // Generate mock child
@@ -56,5 +55,16 @@ test("MusicPlayer applies correct styles", () => {
         </MusicPlayer>
     );
 
-    expect(container.firstChild).toHaveClass("flex");
+    expect(container.firstChild).toBeTruthy();
+    expect(container.firstChild).toHaveProperty('className', expect.stringContaining("flex"));
 });
+
+test("MusicPlayer applies correct styles", () => {
+    const { container } = render(
+        <MusicPlayer>
+            <div>Mock Child</div>
+        </MusicPlayer>
+    );
+
+    expect(container.firstChild).toBeTruthy();
+    expect(container.firstChild).toHaveProperty('className', expect.stringContaining("md:flex-row"));});
