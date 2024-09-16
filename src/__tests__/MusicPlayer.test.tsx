@@ -4,6 +4,7 @@
 import { render } from "@testing-library/react";
 import MusicPlayer from "@/MusicPlayer";
 import { expect, test } from "vitest";
+import '@testing-library/jest-dom';
 
 test("MusicPlayer renders a child correctly", () => {
     // Generate mock child
@@ -46,4 +47,14 @@ test("MusicPlayer renders multiple children correctly", () => {
     // regex will find 3 matches
     const children = getAllByText(/Mock Child \d/);
     expect(children).toHaveLength(3);
+});
+
+test("MusicPlayer applies correct styles", () => {
+    const { container } = render(
+        <MusicPlayer>
+            <div>Mock Child</div>
+        </MusicPlayer>
+    );
+
+    expect(container.firstChild).toHaveClass("flex");
 });
