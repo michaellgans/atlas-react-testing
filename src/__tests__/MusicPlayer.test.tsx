@@ -48,7 +48,7 @@ test("MusicPlayer renders multiple children correctly", () => {
     expect(children).toHaveLength(3);
 });
 
-test("MusicPlayer applies correct styles", () => {
+test("MusicPlayer applies correct styles for flexing", () => {
     const { container } = render(
         <MusicPlayer>
             <div>Mock Child</div>
@@ -59,7 +59,7 @@ test("MusicPlayer applies correct styles", () => {
     expect(container.firstChild).toHaveProperty('className', expect.stringContaining("flex"));
 });
 
-test("MusicPlayer applies correct styles", () => {
+test("MusicPlayer applies correct styles for responsiveness", () => {
     const { container } = render(
         <MusicPlayer>
             <div>Mock Child</div>
